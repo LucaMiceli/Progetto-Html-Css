@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+	color: #030303;  /*Text Color*/
+
+}
+
+/* Navigation CSS */
+.navbar {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background-color: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-nav li{
+	padding-right: .6rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+	padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #028476;  /*navbar text color*/
+}
+/* End Navigation CSS */
+
+/*Land Page CSS*/
+.home-inner {
+	background-image: url(img/homeImg.jpg);
+}
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+	color: white;  /*text color starting page*/
+	text-transform: uppercase; 
+}
+.caption h1{
+	font-size: 3.8rem;
+	font-weight: 600;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+}
+.caption p{
+	font-size: 2rem;
+	font-weight: 500;
+	text-shadow: .1rem .1rem .5rem black;
+	padding-bottom: 1.6rem;
+}
+.btn-lg{
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.3rem;
+	font-size: 1.1rem;
+}
+/*End Land Page CSS*/
+
+.feature svg.svg-inline--fa {
+	color: #028476;
+}
+
+/*Css Section*/
+.fixed {
+	background-image: url(img/siteResourceImg.jpg);
+	z-index: -1;
+}
+.dark{
+	color: white;
+	font-weight: 700;
+	padding: 4rem 2rem; 
+}
+
+.fixed-background h1{
+	margin-bottom: 3rem;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.fixed-background h2{
+	margin-bottom: 2.5rem;
+	font-size: 2rem;
+	font-weight: 500;
+}
+.fixed-background h3{
+	margin-top: 1.5rem;
+}
+/*End Css Section*/
+
+/*Presentation Section*/
+.clients img{
+	width: 100%;
+}
+blockquote .svg-inline--fa {
+	color: #028476;
+	margin: 1rem;
+}
+
+clients-hr {
+	border-top: 1rem solid #028476;
+}
+
+.Jumbotron h3 {
+	font-size: 2rem; 
+	font-weight: 600;
+}
+
+.Jumbotron .btn-lg {
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.3rem;
+	font-size: 1.1rem;
+}
+/*End Presentation Section*/
+
+/*Flip Card CSS start*/
+
+.heading {
+	font-size: 2rem; 
+	font-weight: 600;
+}
+
+.flip-card-container {             /*Container Style*/
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+}
+
+.flip-card {					 	/*Card Style*/
+	position: relative;
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 0 10px 20px 10px;
+	border: 1px solid #000;
+	cursor: default;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover {
+	-webkit-transform: rotate3d(0,1,0,-180deg);
+	-moz-transform: rotate3d(0,1,0,-180deg);
+	-o-transform: rotate3d(0,1,0,-180deg);
+	-ms-transform: rotate3d(0,1,0,-180deg);
+	transform: rotate3d(0,1,0,-180deg);
+}
+
+.flip-card-front {					 /*Front card Style*/
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#flip-copy {
+	background:url(img/copyWritingImg.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#flip-graph {
+	background:url(img/logoImg.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#flip-work {
+	background:url(img/workInProgress.jpg) no-repeat center;
+	background-size: cover;
+}	
+
+.flip-card-back {					/*Back card Style*/
+	background-color: #315659;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotate3d(0,1,0,180deg);
+	-moz-transform: rotate3d(0,1,0,180deg);
+	-o-transform: rotate3d(0,1,0,180deg);
+	-ms-transform: rotate3d(0,1,0,180deg);
+	transform: rotate3d(0,1,0,180deg);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	font-family: 'Montserrat';
+}
+
+.flip-card-back h3 {
+	color: white;
+	margin: 0 15px;
+	padding: 40px 0 20px 0;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.flip-card-back p {
+	color: white;
+	margin: 0 10px;
+	padding: 10px 5px;
+	border-top: 1px solid #000;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.flip-card-back a {
+	display: block;
+	color: white;
+	padding-top: 5px;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.flip-card-back a:hover {
+	color: rgba(158,8,36,0.7);
+}
+
+/*Flip Card CSS end*/
+
+/* Contact Section */
+footer {
+	background-color: #315659; /*div color*/
+	color: white;				/*text color*/
+	padding: 2rem 0 2rem;
+	margin-top: 1rem;
+}
+
+footer a{
+	color: white;
+}
+
+footer .svg-inline--fa{
+	font-size: 2rem;
+	color: white;
+	margin: 1.5rem .5rem 0;
+}
+
+footer .svg-inline--fa:hover{
+	color: #028476;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color: #028476;
+	text-decoration: none;
+}
+
+footer .container {
+	display: none;
+}
+
+footer .show-btn {
+	background: #fff; 
+	padding: 10px 20px; 
+	cursor: pointer;
+	color: #028476;
+}
+
+footer #show:checked ~ .container {
+	display: block;
+}
+
+hr.socket{
+	width: 100%;
+	border-top: .2rem solid white;
+	margin-top: 3rem; 
+} 
+
+
+/* End Contact Section */
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 767px) {
+	.caption h1{
+	font-size: 2.3rem;
+	letter-spacing: .15rem;
+	padding-bottom: .5rem;
+}
+.caption h3{
+	font-size: 1.2rem;
+	padding-bottom: 1.2rem;
+}
+.btn-lg{
+	padding: .5rem 1rem;
+	font-size: 1rem;
+}
+.clients img{
+	max-width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+}
+
+/*End MEDIA QUERIES*/
